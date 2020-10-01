@@ -1,0 +1,523 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #060A24;
+
+
+    line-height: 24px;
+}
+
+h2,h1 {
+    display: inline;
+    font-size: 3em;
+    color: #060A24;
+    letter-spacing: 0;
+    font-family: 'IBM Plex Mono', monospace;
+
+}
+
+/* ++++++++++++++++++++++++++++header---------------- */
+.contenedor {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+section.titulo {
+    margin-top: 6em;
+}
+
+.tituloLineal {
+    width: 70%;
+    align-items: flex-start;
+}
+
+.cabeza {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#menu {
+    display: none;
+}
+
+.menuImg {
+    display: none;
+}
+
+button#menu:focus+nav#superior {
+    display: block;
+}
+
+.logo {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    padding: 13px;
+}
+
+label img:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+
+}
+
+label {
+    display: flex;
+    width: 20%;
+    justify-content: flex-end;
+    padding: 0 5px;
+}
+
+nav {
+    display: flex;
+    margin: 0px 0px;
+}
+
+nav#superior {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+nav#superior ul {
+    width: 20%;
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    padding: 0;
+    justify-content: right;
+}
+
+nav#superior ul a {
+    display: block;
+    width: 7em;
+    text-decoration: none;
+    padding: .3em 0;
+    text-align: center;
+    color: black;
+    background: white;
+    transition: 1s all;
+}
+
+nav#superior ul a:hover {
+    text-decoration: line-through;
+
+}
+
+/* ******************************************************************** */
+/* HEADER PATALLA HASTA 700 */
+@media all and (max-width: 700px) {
+
+    /* En smartphone mostramos el botón */
+    .cabeza {
+        margin-top: 9px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .menuImg {
+        display: flex;
+        padding: 10px;
+    }
+
+    #menu {
+        display: block;
+        margin-left: -50%;
+        position: absolute;
+    }
+
+    nav#superior {
+        display: none;
+        position: absolute;
+    }
+
+    nav#superior ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 55px;
+        max-width: 320px;
+        padding: 0px;
+
+    }
+
+    label img {
+        display: block;
+        height: 25px;
+        margin-bottom: 0px;
+    }
+
+    nav#superior ul a {
+        display: block;
+        width: 15em;
+        text-decoration: none;
+        padding: .3em 0;
+        text-align: center;
+        color: #ffffff;
+        background: #0000EC;
+        transition: 1s all;
+    }
+
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* CONOCE MAS */
+@media all and (max-width: 700px) {
+    .conoceMas {
+        background: #133029;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor-titulo {
+        display: flex;
+        width: 80%;
+    }
+
+    section .titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+
+    .titulo h1 span {
+        display: block;
+    }
+
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++ */
+.contenedor-titulo {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 10px 10px;
+    width: 80%;
+}
+
+.conoceMas {
+    background: rgb(27, 207, 165);
+    width: 90%;
+    max-width: 326px;
+    display: flex;
+    justify-content: center;
+    margin: 35px 14px 10px 10px;
+    font-weight: bold;
+}
+
+.conoceMas:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    transition: 4s all;
+}
+
+/* episodios */
+
+.contenedorMain {
+    background: #0000FE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenedorMain {
+    display: flex;
+    justify-content: center;
+
+}
+
+.tituloEpisodio {
+
+    display: flex;
+    background: #0000FE;
+    width: 80%;
+    align-self: center;
+}
+
+.contenedorEpisodios {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    align-items: center;
+    background: #0000FE;
+
+}
+
+.episodios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgEpisodio {
+    display: flex;
+}
+
+.imgEpisodio img {
+
+    display: flex;
+    max-width: 590px;
+    width: 390px;
+    margin: 15px 15px;
+}
+
+.svg {
+    position: relative;
+    top: 8px;
+}
+
+.svg-bajo {
+    position: relative;
+    bottom: 4px;
+}
+
+
+@media all and (max-width: 700px) {
+    .episodios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contenedorEpisodios {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .contenedorEpisodios .episodios .imgEpisodio img {
+        width: 100%;
+        vertical-align: top;
+        max-width: 390px;
+    }
+}
+
+/* ++++++++++DE DONDE VENIMOS+++++++++++++++++++++++++++ */
+.tituloH1 {
+    line-height: 25px;
+}
+
+.deDondeVenimos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.deDondeVenimos .contenedorDeDondeVenimos .imagenPhone img {
+    width: 100%;
+    max-height: 500px;
+    position: relative;
+    bottom: 150px;
+    vertical-align: top;
+}
+
+
+.contenedorDeDondeVenimos {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+
+}
+
+.imagenPhone {
+    display: flex;
+    width: 260px;
+    flex-shrink: 0;
+}
+
+
+.texDedondeVenimos {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    position: relative;
+    bottom: 80px;
+
+}
+
+/* +++++++++++++++++++++ MOVILE ++++++++++++++++++++ */
+@media all and (max-width: 700px) {
+
+    .contenedorDeDondeVenimos {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+
+    }
+
+    .deDondeVenimos .contenedorDeDondeVenimos .imagenPhone img {
+        width: 100%;
+        position: relative;
+        bottom: 90px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagenPhone {
+        max-width: 250px;
+        width: 80%;
+    }
+
+    .texDedondeVenimos {
+        width: 85%;
+    }
+}
+
+/* +++++++++++++++ INVITADOS +++++++++++++++++++++++++ */
+.contenedorGaleria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.galeria .contenedorGaleria .imgGaleria {
+    vertical-align: top;
+    width: 33%;
+}
+
+
+.galeria .contenedorGaleria .imgGaleria img {
+    vertical-align: top;
+    width: 100%;
+}
+
+.tituloInvitados {
+    display: flex;
+    line-height: 5px;
+    justify-content: center;
+    width: 80%;
+    align-self: center;
+}
+
+.tituloInvitados h1 {
+    line-height: 25px;
+    display: flex;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 700px) {
+    .contenedorGaleria {
+        flex-direction: column;
+    }
+
+    .galeria .contenedorGaleria .imgGaleria {
+        vertical-align: top;
+        width: 100%;
+    }
+}
+
+    /* ----------------Temas------------------------------ */
+    section.temas {
+        display: flex;
+        flex-direction: column;
+        
+        align-content: center;
+        margin: 20px 20px;
+
+    }
+
+    .temas .tituloTemas {
+        display: flex;
+        
+    }
+    .cajaTitulo{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .cajaTitulo h2{
+     align-items: center;
+    }
+    .temas .contenedorTemas {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-self: center;
+        width: 70%;
+        margin: 80px 0px;
+    }
+
+
+    /* +++++++++++++++Novedades +++++++++++++++++++ */
+.novedades{
+    width: 100%;
+    display: flex;
+    
+    flex-direction: column;
+}
+    div.contenedorNovedades{
+        display: flex;
+        width: 100%;
+        height: 150px;
+        background: #0000FF ; 
+        transform: rotate(-6deg) skew(-7deg)  translateY(-200px);
+        order: 4;
+        margin-left: 0;
+    }
+
+    .uno{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        background: #0000FF ; 
+        transform:  translateY(62px); 
+        justify-content: center;
+    }
+    .tituloNovedades{
+        display: flex;
+        justify-content: center;
+        font-family: IBMPlexSans;
+        font-size: 28px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: center;
+        box-sizing: content-box;
+    }
+
+    .sociales{
+        display: flex;
+        width: 90%;
+        justify-content:center;
+    }
+    .derechos{
+        display: flex;
+        width: 60%;
+    
+    }
+    .redes{
+        display: flex;
+        width: 30%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-self: center;
+    }
+    .faceboock:hover{
+        background: rgba(230, 99, 99, 0.3);
+    }
+ 
